@@ -29,7 +29,6 @@ import org.apache.http.util.EntityUtils;
 import org.apache.log4j.Logger;
 
 public class HttpUtil {
-
     private static Logger logger = Logger.getLogger(HttpUtil.class);
     /**
      * get请求
