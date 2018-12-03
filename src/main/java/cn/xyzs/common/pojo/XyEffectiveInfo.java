@@ -9,6 +9,10 @@ import javax.persistence.Table;
 @Table(name = "XY_EFFECTIVE_INFO")
 public class XyEffectiveInfo {
 
+    //有效信息id
+    @Column(name = "EFFECTIVE_INFO_ID")
+    private String effectiveInfoId;
+
     //提交人id
     @Column(name = "SUBMIT_USER_ID")
     private String submitUserId;
