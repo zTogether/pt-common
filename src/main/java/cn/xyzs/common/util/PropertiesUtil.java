@@ -24,7 +24,6 @@ public class PropertiesUtil {
 		}
 
 	}
-
 	/**
 	 * 通过Key读取值
 	 * @param key
