@@ -88,5 +88,18 @@ public class XyGcbGrxx {
     @Getter
     @Setter
     private String  password;
+    //特权数
+    @Getter
+    @Setter
+    private String  grPriv;
+    //积分
+    @Getter
+    @Setter
+    private String  grScore;
+
+    //工人工资级别
+    @Getter
+    @Setter
+    private String grGzLevel;
 
 }
