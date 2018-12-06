@@ -97,4 +97,9 @@ public class XyGcbGrxx {
     @Setter
     private String  grScore;
 
+    //工人工资级别
+    @Getter
+    @Setter
+    private String grGzLevel;
+
 }
