@@ -88,5 +88,13 @@ public class XyGcbGrxx {
     @Getter
     @Setter
     private String  password;
+    //特权数
+    @Getter
+    @Setter
+    private String  grPriv;
+    //积分
+    @Getter
+    @Setter
+    private String  grScore;
 
 }
