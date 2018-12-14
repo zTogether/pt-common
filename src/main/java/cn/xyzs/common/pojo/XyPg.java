@@ -3,6 +3,7 @@ package cn.xyzs.common.pojo;
 import lombok.Data;
 
 import javax.persistence.Column;
+import javax.persistence.Id;
 
 /***
  *
@@ -16,6 +17,7 @@ import javax.persistence.Column;
 public class XyPg {
     //单据号
     @Column(name = "PG_ID")
+    @Id
     private String pgId;
 
     //客户号
