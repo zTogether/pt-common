@@ -91,15 +91,15 @@ public class XyGcbGrxx {
     //特权数
     @Getter
     @Setter
-    private String  grPriv;
+    private Integer  grPriv;
     //积分
     @Getter
     @Setter
-    private String  grScore;
+    private Integer  grScore;
 
     //工人工资级别
     @Getter
     @Setter
-    private String grGzLevel;
+    private Double grGzLevel;
 
 }
