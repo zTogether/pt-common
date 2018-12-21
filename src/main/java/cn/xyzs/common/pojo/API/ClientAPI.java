@@ -22,4 +22,6 @@ public class ClientAPI {
     private String lastLoginAddr;
     @Column(name = "REMARK")
     private String remark;
+    @Column(name = "VERSION")
+    private String version;
 }
