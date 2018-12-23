@@ -15,12 +15,12 @@ public class XyCwbCapital {
     private String userId;
 
     //可提现金额
-    @Column(name = "ALLOW_WITHDRAW_DEPOSIT_MENOY")
-    private String allowWithdrawDepositMenoy;
+    @Column(name = "ALLOW_WITHDRAW_DEPOSIT_MONEY")
+    private String allowWithdrawDepositMoney;
 
     //不可提现金额
-    @Column(name = "NOTA_WITHDRAW_DEPOSIT_MENOY")
-    private String notaWithdrawDepositMenoy;
+    @Column(name = "NOTA_WITHDRAW_DEPOSIT_MONEY")
+    private String notaWithdrawDepositMoney;
 
     //交易密码
     @Column(name = "TRANSACTION_PASSWORD")

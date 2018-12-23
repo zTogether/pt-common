@@ -20,8 +20,8 @@ public class XyCwbCapitalDetail {
      private String capitalType;
 
      //金额
-     @Column(name = "MENOY")
-     private String menoy;
+     @Column(name = "MONEY")
+     private String money;
 
      //操作时间
      @Column(name = "OP_DATE")
