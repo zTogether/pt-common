@@ -5,6 +5,7 @@ import lombok.Setter;
 
 import javax.persistence.Id;
 import javax.persistence.Table;
+import java.util.Date;
 
 /***
  *
@@ -101,5 +102,10 @@ public class XyGcbGrxx {
     @Getter
     @Setter
     private Double grGzLevel;
+
+    //限制抢单的日期
+    @Getter
+    @Setter
+    private Date limitDate;
 
 }
