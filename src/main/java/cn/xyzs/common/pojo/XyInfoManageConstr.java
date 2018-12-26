@@ -35,4 +35,12 @@ public class XyInfoManageConstr {
     //所属人类型 1：执行总监，2：工程总监
     @Column(name = "BELONG_USER_TYPE")
     private String belongUserType;
+
+    //操作日期
+    @Column(name = "OP_DATE")
+    private String opDate;
+
+    //序号
+    @Column(name = "XH")
+    private String XH;
 }
