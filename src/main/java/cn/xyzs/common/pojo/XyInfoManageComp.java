@@ -47,4 +47,8 @@ public class XyInfoManageComp {
     //责任人回复日期
     @Column(name = "RES_DATE")
     private String resDate;
+
+    //序号
+    @Column(name = "XH")
+    private String XH;
 }
