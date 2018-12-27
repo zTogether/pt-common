@@ -41,7 +41,7 @@ public class XyInfoManageComp {
     private String opUser;
 
     //登记日期
-    @Column(name = "OPDATE")
+    @Column(name = "OP_DATE")
     private String opDate;
 
     //责任人回复日期
