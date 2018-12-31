@@ -28,7 +28,7 @@ public class XyWorkNode {
     @Column(name = "NODE_ISDEL")
     private String nodeIsdel;
     @Column(name = "NODE_ADDTIME")
-    private String nodeAddtime;
+    private Long nodeAddtime;
     @Column(name = "CONFIRMNODE_BUTTON")
     private String confirmnodeButton;
     @Column(name = "CANCENODE_BUTTON")
