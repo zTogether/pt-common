@@ -2,9 +2,7 @@ package cn.xyzs.common.pojo.sys;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 /**
  * @Author: zhouchao
@@ -14,6 +12,7 @@ import javax.persistence.Table;
 @Table(name = "XY_WORK_NODE")
 public class XyWorkNode {
     @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY,generator = "select sys_guid() from dual")
     private String nodeId;
     @Column(name = "FLOW_ID")
     private String flowId;

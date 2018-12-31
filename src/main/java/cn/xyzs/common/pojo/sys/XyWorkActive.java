@@ -14,6 +14,7 @@ import javax.persistence.Table;
 @Table(name = "XY_WORK_ACTIVE")
 public class XyWorkActive {
     @Id
+    //@GeneratedValue(strategy = GenerationType.IDENTITY,generator = "select sys_guid()")
     private String actId;
     @Column(name = "ACT_NAME")
     private String actName;
