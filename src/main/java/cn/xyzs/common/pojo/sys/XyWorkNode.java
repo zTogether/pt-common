@@ -36,6 +36,8 @@ public class XyWorkNode {
     private String nodeOperationUser;
     @Column(name = "NODE_OPERATION_GROUP")
     private String nodeOperationGroup;
+    @Column(name = "NODE_POSITION")
+    private String nodePosition;
 
 
 
