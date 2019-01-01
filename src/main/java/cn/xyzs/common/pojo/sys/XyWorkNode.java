@@ -38,8 +38,6 @@ public class XyWorkNode {
     private String nodeOperationGroup;
     @Column(name = "NODE_POSITION")
     private String nodePosition;
-
-
-
-
+    @Column(name = "IS_COPY")
+    private String isCopy;
 }
