@@ -1,4 +1,4 @@
-package cn.xyzs.common.pojo;
+package cn.xyzs.common.pojo.sys;
 
 import lombok.Data;
 
