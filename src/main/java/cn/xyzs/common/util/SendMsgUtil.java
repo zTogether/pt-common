@@ -26,6 +26,7 @@ public class SendMsgUtil {
     private static final int templateId6 = 235087;//感谢参加活动信息短信模板ID              尊敬的业主您好，感谢您参与《豪门盛宴十周年——名家名房名车》活动，轩辕装饰祝您生活愉快！回T退订
     private static final int templateId7 = 235605;//财务友情提示模板ID                      为保障您的财产权益，涉及我司的结算款项请以财务为准，我司人员不会以个人名义向您收取，如有个人收取，请您谨慎！
     private static final int templateId8 = 258657;//股东分红通知模板                    尊敬的合伙人：2018年保底分红补差已提交银行代发至您预留的账号中，请注意查收。届时会因元旦假期延时到帐深表歉意（如有疑问请联系15105158201郑会计）感谢您一年以来的支持与配合！祝各位合伙人元旦快乐，全家幸福！
+    private static final int templateId9  = 261096;//一户一表待处理事项通知                您有一个《一户一表》待处理事项，档案号：{1}，处理限期：{2}，请及时查看。
     // 签名
     private static final String smsSign = "江苏轩辕装饰工程有限公司"; // NOTE: 这里的签名"腾讯云"只是一个示例，真实的签名需要在短信控制台中申请，另外签名参数使用的是`签名内容`，而不是`签名ID`
     // 需要发送短信的手机号码
@@ -62,6 +63,8 @@ public class SendMsgUtil {
                 templateId = templateId7;
             } else if("7".equals(sendType)){
                 templateId = templateId8;
+            } else if("8".equals(sendType)){
+                templateId = templateId9;
             }
             SmsSingleSender ssender = new SmsSingleSender(appid, appkey);
             SmsSingleSenderResult result = ssender.sendWithParam("86", phone, templateId, params, smsSign, "", "");  // 签名参数未提供或者为空时，会使用默认签名发送短信
