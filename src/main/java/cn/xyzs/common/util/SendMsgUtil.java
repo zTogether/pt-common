@@ -142,8 +142,7 @@ public class SendMsgUtil {
         return String.valueOf(authCodeNew);
     }
 
-    public static String msgModel(String phoneNum,String param,int templateId){
-        String[] params = param.split(",");
+    public static String msgModel(String phoneNum,String[] params,int templateId){
         String code = "500";
         String msg = "发送失败";
         try{
