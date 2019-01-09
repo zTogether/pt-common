@@ -116,6 +116,34 @@ public class SendMsgUtil {
         return String.valueOf(authCodeNew);
      }
 
+    public static String msgModel(String phoneNum,String param,int templateId){
+        String[] params = param.split(",");
+        String code = "500";
+        String msg = "发送失败";
+        try{
+            SmsSingleSender ssender = new SmsSingleSender(appid, appkey);
+            SmsSingleSenderResult result = ssender.sendWithParam("86",phoneNum,templateId,params,smsSign,"","");
+            JSONObject resultJson = JSON.parseObject(result.toString());
+            String resultCode = resultJson.getString("result");
+            String resultMsg = resultJson.getString("errmsg");
+            System.out.println(result.toString());
+            if ("0".equals(resultCode)){
+                code = "200";
+                msg = "发送成功";
+            } else {
+                code = resultCode;
+                msg = resultMsg;
+            }
+        }catch (HTTPException e){
+            e.printStackTrace();
+        }catch (JSONException e){
+            e.printStackTrace();
+        }catch (IOException e){
+            e.printStackTrace();
+        }
+        return code;
+     }
+
 
     public static void main(String args[]) {
         String []params = {"2018000111","2018-10-21","葛伟亮","15250992995"};
