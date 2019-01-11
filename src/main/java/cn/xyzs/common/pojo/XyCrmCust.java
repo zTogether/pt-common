@@ -80,4 +80,8 @@ public class XyCrmCust {
     //当前对接人
      @Column(name = "JOIN_USERID")
      private String joinUserid;
+
+     //节点
+    @Column(name = "JOB_SCHEDULE")
+    private String jobSchedule;
 }
