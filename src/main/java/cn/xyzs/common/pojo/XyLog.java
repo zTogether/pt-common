@@ -1,8 +1,11 @@
 package cn.xyzs.common.pojo;
 
+import lombok.Data;
+
 import javax.persistence.Column;
 import javax.persistence.Table;
 
+@Data
 @Table(name = "XY_LOG")
 public class XyLog {
 
