@@ -28,4 +28,8 @@ public class XyShopPositionInfo {
     //店铺地址详情
     @Column(name = "SHOP_ADDRESS")
     private String shopAddress;
+
+    //是否启用(0：启用    1：停用)
+    @Column(name = "IS_USED")
+    private String isUsed;
 }
