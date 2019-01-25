@@ -7,7 +7,7 @@ import javax.persistence.Table;
 
 @Data
 @Table(name = "XY_HOUSER_TYPE")
-public class HouseTypeId {
+public class XyHouserType {
 
     //户型id
     @Column(name = "HOUSE_TYPE_ID")
