@@ -13,15 +13,15 @@ public class XyMainHouser {
     @Column(name = "HOUSE_ID")
     private String houseId;
 
-    //小区id
-    @Column(name = "AREA_ID")
-    private String areaId;
+    //户型id
+    @Column(name = "HOUSE_TYPE_ID")
+    private String houseTypeId;
 
     //CAD图纸地址
     @Column(name = "CAD_COMMON_URL")
     private String cadCommonUrl;
 
-    //户型名称
+    //户型风格
     @Column(name = "HOUSE_STYLE")
     private String houseStyle;
 
