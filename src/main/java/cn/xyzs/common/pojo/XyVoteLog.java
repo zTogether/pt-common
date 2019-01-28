@@ -24,4 +24,8 @@ public class XyVoteLog {
     //
     @Column(name = "OP_USER")
     private String opUser;
+
+    //
+    @Column(name = "VOTE_SCORE")
+    private String voteScore;
 }
